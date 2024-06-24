@@ -1,0 +1,42 @@
+.tabmenu {
+    padding: 100px 0;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.tab {
+    width: 100%;
+    border-bottom: 2px solid #2b70d8;
+    padding: 8px;
+    opacity: 0.4;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab.is-active {
+    opacity: 1;
+    border-bottom: 2px solid #2b70d8;
+}
+
+.tab:hover {
+    opacity: 1;
+}
+
+.contents-wrap {
+    margin-top: 24px;
+}
+
+.contents {
+    display: none;
+    font-size: 1rem; /* 16px */
+}
+
+.contents.is-active {
+    display: block;
+}

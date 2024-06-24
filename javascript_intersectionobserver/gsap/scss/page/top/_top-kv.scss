@@ -1,0 +1,29 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+.top-kv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: #eee;
+}
+
+.top-kv-title {
+    font-size: min(8vw, 80px);
+    font-weight: bold;
+}
+
+.top-main {
+    padding: 80px 0;
+}
+
+.top-main-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    line-height: 2;
+}

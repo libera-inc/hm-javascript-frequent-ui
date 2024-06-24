@@ -1,0 +1,43 @@
+const tabMenu = () => {
+    const tabs = document.querySelectorAll("[data-button]");
+    const contents = document.querySelectorAll("[data-content]");
+
+    // Keyframe
+    const openingKeyframes = {
+        opacity: [0, 1],
+        transform: ["translateY(10px)", "translateY(0)"],
+    };
+
+    // Option
+    const openingOptions = {
+        duration: 300,
+        easing: "ease-out",
+        fill: "forwards",
+    };
+
+    const tabClick = (event) => {
+        //クリックされたdata-buttonの値
+        const targetValue = event.target.dataset.button;
+        //クリックされたtab
+        const targetTab = tabs[targetValue];
+        //クリックされたtabに対応するcontents
+        const targetContent = document.querySelector('[data-content="' + targetValue + '"]');
+
+        //全てのis-activeをremove
+        [tabs, contents].forEach((array) => array.forEach((element) => element.classList.remove("is-active")));
+
+        //クリックしたタブにis-activeをadd
+        targetTab.classList.add("is-active");
+
+        //クリックしたコンテンツにis-activeをadd
+        targetContent.classList.add("is-active");
+        targetContent.animate(openingKeyframes, openingOptions);
+    };
+
+    //tabsクリックで発火
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", (event) => tabClick(event));
+    });
+};
+
+tabMenu();

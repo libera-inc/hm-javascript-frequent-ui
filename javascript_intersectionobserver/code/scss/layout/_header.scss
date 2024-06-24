@@ -1,0 +1,43 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    &.is-fixed {
+        position: fixed;
+        top: -60px;
+        background-color: #313131;
+        color: #fff;
+    }
+}
+
+.header-logo {
+    font-weight: bold;
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.header-item {
+    a {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        font-weight: bold;
+    }
+}
