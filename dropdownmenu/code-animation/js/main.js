@@ -9,8 +9,8 @@ const dropDownmenu = () => {
         transform: ["scale(0.95)", "scale(1)"],
     };
 
-    // Closeing Keyframe
-    const closeingKeyframes = {
+    // Closing Keyframe
+    const closingKeyframes = {
         opacity: [1, 0],
         transform: ["scale(1)", "scale(0.95)"],
     };
@@ -33,7 +33,7 @@ const dropDownmenu = () => {
 
     // menuをcloseする関数
     const closeMenu = () => {
-        const closingAnim = menu.animate(closeingKeyframes, options);
+        const closingAnim = menu.animate(closingKeyframes, options);
 
         // アニメーション完了後
         closingAnim.onfinish = () => {

@@ -15,7 +15,7 @@ const accordion = () => {
         };
     };
 
-    // Closeing Keyframe
+    // Closing Keyframe
     const closingKeyframes = (content) => {
         return {
             height: [content.offsetHeight + "px", 0],
