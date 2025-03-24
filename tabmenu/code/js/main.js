@@ -5,6 +5,7 @@ const tabMenu = () => {
     const tabClick = (event) => {
         //クリックされたdata-buttonの値
         const targetValue = event.target.dataset.button;
+
         //クリックされたtab
         const targetTab = tabs[targetValue];
         //クリックされたtabに対応するcontents

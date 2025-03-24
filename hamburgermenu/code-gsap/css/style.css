@@ -35,12 +35,6 @@
     display: none;
 }
 
-/* .menu[open] {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 @media screen and (min-width: 768px) {
     .menu {
         display: block;
@@ -48,8 +42,8 @@
         width: auto;
         height: auto;
         background-color: inherit;
-        opacity: 1;
-        visibility: visible;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 }
 
