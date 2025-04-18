@@ -10,29 +10,24 @@ const toggleHeaderOnScroll = () => {
         threshold: 0,
     };
 
-    // GSAPアニメーションのOption
-    const slideDownOptions = {
-        y: 60,
-        duration: 0.15,
-        ease: "power2.out",
-    };
-
-    const slideUpOptions = {
-        y: 0,
-        duration: 0.15,
-        ease: "power2.out",
-        onComplete: () => headerElement.classList.remove(headerFixedClass),
-    };
-
     // headerを表示
     const showHeader = () => {
         headerElement.classList.add(headerFixedClass);
-        gsap.to(headerElement, slideDownOptions);
+        gsap.to(headerElement, {
+            y: 60,
+            duration: 0.15,
+            ease: "power2.out",
+        });
     };
 
     // headerを隠す
     const hideHeader = () => {
-        gsap.to(headerElement, slideUpOptions);
+        gsap.to(headerElement, {
+            y: 0,
+            duration: 0.15,
+            ease: "power2.out",
+            onComplete: () => headerElement.classList.remove(headerFixedClass),
+        });
     };
 
     const headerVisibilityHandler = (entries) => {
