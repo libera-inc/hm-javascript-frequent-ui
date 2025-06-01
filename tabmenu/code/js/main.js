@@ -2,6 +2,8 @@ const tabMenu = () => {
     const tabs = document.querySelectorAll("[data-button]");
     const contents = document.querySelectorAll("[data-content]");
 
+    if (!tabs || !contents) return;
+
     const tabClick = (event) => {
         //クリックされたdata-buttonの値
         const targetValue = event.target.dataset.button;
