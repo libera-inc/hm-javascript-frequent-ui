@@ -2,6 +2,8 @@ const tabMenu = () => {
     const tabs = document.querySelectorAll("[data-button]");
     const contents = document.querySelectorAll("[data-content]");
 
+    if (!tabs.length || !contents.length) return;
+
     // Keyframe
     const openingKeyframes = {
         opacity: [0, 1],

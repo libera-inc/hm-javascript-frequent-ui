@@ -3,6 +3,8 @@ const toggleHeaderOnScroll = () => {
     const scrollTargetElement = document.querySelector(".js-scrollTarget");
     const headerFixedClass = "is-fixed";
 
+    if (!headerElement || !scrollTargetElement) return;
+
     // IntersectionObserverのOption
     const observerOptions = {
         root: null,

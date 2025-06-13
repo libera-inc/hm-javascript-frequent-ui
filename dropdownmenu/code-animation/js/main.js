@@ -19,7 +19,6 @@ const dropDownmenu = () => {
     const options = {
         duration: 150,
         easing: "ease-out",
-        fill: "forwards",
     };
 
     // buttonとmenuがページ内にない場合returnする
