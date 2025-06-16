@@ -1,13 +1,14 @@
 const accordion = () => {
     const details = document.querySelectorAll(".js-details");
 
+    // detailsがページ内にない場合returnする
+    if (!details.length) return;
+
     // アニメーション実行中に付与するカスタムデータ属性
     const isRunning = "running";
 
     // open時に付与するクラス
     const isOpen = "is-open";
-
-    if (!details) return;
 
     details.forEach((detail) => {
         const summary = detail.querySelector(".js-summary");
