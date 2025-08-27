@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+
+.l-header {
+    height: var(--header-height);
+    background-color: #ddd;
+    position: sticky;
+    top: 0;
+}

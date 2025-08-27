@@ -1,0 +1,11 @@
+@use "../global" as g;
+
+/*!
+layout > container
+------------------------------
+*/
+.l-container {
+    width: 90%;
+    max-width: var(--content-width);
+    margin-inline: auto;
+}

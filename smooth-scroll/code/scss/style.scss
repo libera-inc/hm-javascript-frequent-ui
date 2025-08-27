@@ -1,0 +1,39 @@
+@use "foundation";
+@use "utility";
+@use "component";
+@use "layout";
+@use "page";
+
+.test-kv {
+    height: 40vh;
+    background-color: #eee;
+}
+
+.test-container {
+    width: 90%;
+    max-width: 760rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40rem 0;
+}
+
+.mt40 {
+    margin-top: 40rem;
+}
+
+.test-contact {
+    height: 100vh;
+    background-color: #eee;
+}
+
+.test-list {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin-top: 40rem;
+}
+
+.test-link {
+    text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+@use "./breakpoints" as g;
+
+/*!
+global > color
+------------------------------
+*/
+:root {
+    --content-width: 1100rem;
+    --header-height: 48rem;
+
+    @include g.mq() {
+        --header-height: 68rem;
+    }
+}

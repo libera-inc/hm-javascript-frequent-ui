@@ -1,0 +1,24 @@
+@use "../global" as g;
+
+/*!
+component > fixed-cta
+------------------------------
+*/
+.c-fixed-cta {
+    position: fixed;
+    bottom: 16rem;
+    right: 16rem;
+    width: 200rem;
+    height: 100rem;
+    place-items: center;
+    background-color: #ddd;
+    display: none;
+
+    @include g.mq() {
+        width: 320rem;
+    }
+
+    &.is-fixed {
+        display: grid;
+    }
+}
