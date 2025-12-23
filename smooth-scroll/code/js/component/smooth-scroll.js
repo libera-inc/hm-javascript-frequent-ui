@@ -14,6 +14,8 @@ export function initializeSmoothScroll() {
     // ページ内のアンカーリンク（#で始まるhref）を全て取得
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
+    if (!anchorLinks.length) return;
+
     // 各アンカーリンクにクリックイベントを設定
     anchorLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
